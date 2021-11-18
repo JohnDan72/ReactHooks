@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown, Nav } from 'rsuite';
+// import { Dropdown, Nav } from 'rsuite';
+import ResponsiveNav from '@rsuite/responsive-nav';
+
 
 
 // icons
@@ -11,7 +13,7 @@ const propTypes = {
     setTheme: PropTypes.func.isRequired
 };
 const defaultProps = {};
-
+ 
 
 const NavBarHeader = ({ setTheme }) => {
 
@@ -19,32 +21,26 @@ const NavBarHeader = ({ setTheme }) => {
     const handleTheme = (theme) => setTheme(theme);
 
     return (
-        <Nav appearance="tabs" active={active} onSelect={setActive}>
-            <Nav.Item href="/" eventKey="home" icon={<BsFillHouseFill />}>
-                Home
-            </Nav.Item>
-            
-            <Nav.Item href="/counter" eventKey="useState">01-useState</Nav.Item>
-            <Nav.Item href="/counterHook" eventKey="useStateHook">01-useState-Hook</Nav.Item>
-            <Nav.Item href="/useEffect" eventKey="useEffect">02-useEffect</Nav.Item>
-            <Nav.Item href="/useEffectHook" eventKey="useEffectHook">02-useEffect-Hook</Nav.Item>
-            <Nav.Item href="/useFetch" eventKey="useFetch">03-useFetch</Nav.Item>
-            <Dropdown title="Mode">
-                <Dropdown.Item  eventKey="light" 
-                                onClick={() => handleTheme('light')}>
-                                    Light
-                </Dropdown.Item>  
-                <Dropdown.Item  eventKey="dark" 
-                                onClick={() => handleTheme('dark')}>
-                                    Dark
-                </Dropdown.Item> 
-                <Dropdown.Item  eventKey="highContrast" 
-                                onClick={() => handleTheme('high-contrast')}>
-                                    High Contrast
-                </Dropdown.Item>   
-            </Dropdown>
-        </Nav>
+        <>
+            <ResponsiveNav activeKey={active} onSelect={setActive} appearance="tabs">
 
+                <ResponsiveNav.Item icon={<BsFillHouseFill />} eventKey='home'> Home </ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/counter" eventKey='useState'> 01-useState</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/counterHook" eventKey='useStateHook'> 01-useState-Hook</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useEffect" eventKey='useEffect'> 02-useEffect</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useEffectHook" eventKey='useEffectHook'> 02-useEffect-Hook</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useFetch" eventKey='useFetch'> 03-useFetch</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useRef" eventKey='useRef'> 04-useRef</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useRefReal" eventKey='useRefReal'> 04-useRefReal</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useLayoutEffect" eventKey='useLayoutEffect'> 05-useLayoutEffect</ResponsiveNav.Item>
+                
+                
+                <ResponsiveNav.Item eventKey='light' onClick={()=>handleTheme('light')}> Mode light</ResponsiveNav.Item>
+                <ResponsiveNav.Item eventKey='dark' onClick={()=>handleTheme('dark')}> Mode dark</ResponsiveNav.Item>
+                <ResponsiveNav.Item eventKey='highContrast' onClick={()=>handleTheme('highContrast')}> Mode highContrast</ResponsiveNav.Item>
+                
+            </ResponsiveNav>
+        </>
     );
 }
 

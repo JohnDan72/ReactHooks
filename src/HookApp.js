@@ -8,6 +8,9 @@ import CounterWithCustomHook from './components/01-useState/CounterWithCustomHoo
 import SimpleForm from './components/02-useEffect/SimpleForm';
 import SimpleFormWithCustomHook from './components/02-useEffect/SimpleFormWithCustomHook';
 import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks';
+import FocusScreen from './components/04-useRef/FocusScreen';
+import RealExampleRef from './components/04-useRef/RealExampleRef';
+import Layout from './components/05-layoutEffect/Layout';
 
 
 const HookApp = () => {
@@ -35,6 +38,9 @@ const HookApp = () => {
                                         <Route exact path="/useEffect" element={<SimpleForm />} />
                                         <Route exact path="/useEffectHook" element={<SimpleFormWithCustomHook />} />
                                         <Route exact path="/useFetch" element={<MultipleCustomHooks />} />
+                                        <Route exact path="/useRef" element={<FocusScreen />} />
+                                        <Route exact path="/useRefReal" element={<RealExampleRef />} />
+                                        <Route exact path="/useLayoutEffect" element={<Layout />} />
                                     </Routes>
                                 </Router>
                             </FlexboxGrid.Item>
