@@ -18,11 +18,11 @@ const SimpleForm = () => {
     const { name, email } = fomrState;
 
     useEffect(() => {
-        // console.log("Hey man!!")
+        console.log("Hey man!!")
     } , []);
 
     useEffect(() => {
-        // console.log("email cambió")
+        console.log("email cambió")
     } , [email]);
 
     // useEffect(() => {

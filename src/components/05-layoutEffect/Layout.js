@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
-import { Button, ButtonToolbar, Col, Divider, FlexboxGrid, Message, TagGroup , Tag } from 'rsuite';
+import { Button, ButtonToolbar, Col, Divider, FlexboxGrid, Message, TagGroup, Tag } from 'rsuite';
 
 // hooks
 import { useCounter } from "../../hooks/useCounter";

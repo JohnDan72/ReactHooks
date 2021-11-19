@@ -5,3 +5,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.disabled{
+    color: var(--rs-gray-200);
+    text-decoration: line-through;
+}
+
+/* override rsuite css */
+
+.rs-toggle .rs-toggle-inner {
+    display: flex;
+    align-items: center;
+}

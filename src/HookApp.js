@@ -11,7 +11,14 @@ import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks';
 import FocusScreen from './components/04-useRef/FocusScreen';
 import RealExampleRef from './components/04-useRef/RealExampleRef';
 import Layout from './components/05-layoutEffect/Layout';
+import Memorize from './components/06-memo/Memorize';
+import MemoHook from './components/06-memo/MemoHook';
+import CallbackHook from './components/06-memo/CallbackHook';
+import Padre from "./components/07-tareaMemo/Padre";
 
+// intro reducer
+// import "./components/08-useReducer/intro-reducer.js";
+import TodoApp from './components/08-useReducer/TodoApp';
 
 const HookApp = () => {
     const [theme, setTheme] = useState('dark');
@@ -41,6 +48,11 @@ const HookApp = () => {
                                         <Route exact path="/useRef" element={<FocusScreen />} />
                                         <Route exact path="/useRefReal" element={<RealExampleRef />} />
                                         <Route exact path="/useLayoutEffect" element={<Layout />} />
+                                        <Route exact path="/memorize" element={<Memorize />} />
+                                        <Route exact path="/memoHook" element={<MemoHook />} />
+                                        <Route exact path="/useCallback" element={<CallbackHook />} />
+                                        <Route exact path="/tareaMemo" element={<Padre />} />
+                                        <Route exact path="/useReducer" element={<TodoApp />} />
                                     </Routes>
                                 </Router>
                             </FlexboxGrid.Item>

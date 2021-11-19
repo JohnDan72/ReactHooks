@@ -33,11 +33,16 @@ const NavBarHeader = ({ setTheme }) => {
                 <ResponsiveNav.Item href="/useRef" eventKey='useRef'> 04-useRef</ResponsiveNav.Item>
                 <ResponsiveNav.Item href="/useRefReal" eventKey='useRefReal'> 04-useRefReal</ResponsiveNav.Item>
                 <ResponsiveNav.Item href="/useLayoutEffect" eventKey='useLayoutEffect'> 05-useLayoutEffect</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/memorize" eventKey='memorize'> 06-memorize</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/memoHook" eventKey='memoHook'> 06-memoHook</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useCallback" eventKey='useCallback'> 06-useCallback</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/tareaMemo" eventKey='tareaMemo'> 07-tareaMemo</ResponsiveNav.Item>
+                <ResponsiveNav.Item href="/useReducer" eventKey='useReducer'> 08-useReducer</ResponsiveNav.Item>
                 
                 
                 <ResponsiveNav.Item eventKey='light' onClick={()=>handleTheme('light')}> Mode light</ResponsiveNav.Item>
                 <ResponsiveNav.Item eventKey='dark' onClick={()=>handleTheme('dark')}> Mode dark</ResponsiveNav.Item>
-                <ResponsiveNav.Item eventKey='highContrast' onClick={()=>handleTheme('highContrast')}> Mode highContrast</ResponsiveNav.Item>
+                <ResponsiveNav.Item eventKey='highContrast' onClick={()=>handleTheme('high-contrast')}> Mode highContrast</ResponsiveNav.Item>
                 
             </ResponsiveNav>
         </>
