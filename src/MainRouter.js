@@ -26,39 +26,50 @@ import ContextApp from './components/09-useContext/ContextApp';
 import HomeScreen from './components/09-useContext/HomeScreen';
 import AboutScreen from './components/09-useContext/AboutScreen';
 import LoginScreen from './components/09-useContext/LoginScreen';
+import { UserContext } from './components/09-useContext/UserContext';
+
+
+// data context
+// import data from './userData.json';
+
 
 const MainRouter = () => {
+    const [user, setUser] = useState({})
     const [theme, setTheme] = useState('dark');
 
     return (
-        <CustomProvider theme={theme}>
-            <Router>
-                <Routes>
-                    <Route path="/hooks" element={<HookApp setTheme={setTheme} />} >
-                        <Route path="" element={<h2>Home</h2>} />
-                        <Route path="counter" element={<CounterApp />} />
-                        <Route path="counterHook" element={<CounterWithCustomHook />} />
-                        <Route path="useEffect" element={<SimpleForm />} />
-                        <Route path="useEffectHook" element={<SimpleFormWithCustomHook />} />
-                        <Route path="useFetch" element={<MultipleCustomHooks />} />
-                        <Route path="useRef" element={<FocusScreen />} />
-                        <Route path="useRefReal" element={<RealExampleRef />} />
-                        <Route path="useLayoutEffect" element={<Layout />} />
-                        <Route path="memorize" element={<Memorize />} />
-                        <Route path="memoHook" element={<MemoHook />} />
-                        <Route path="useCallback" element={<CallbackHook />} />
-                        <Route path="tareaMemo" element={<Padre />} />
-                        <Route path="useReducer" element={<TodoApp />} />
-                    </Route>
-                    <Route path="/context" element={<ContextApp setTheme={setTheme} />}>
-                        <Route path="" element={<HomeScreen />} />
-                        <Route path="about" element={<AboutScreen />} />
-                        <Route path="login" element={<LoginScreen />} />
-                    </Route>
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </Router>
-        </CustomProvider>
+        <UserContext.Provider value={{
+            user, setUser
+        }}>
+            <CustomProvider theme={theme}>
+                <Router>
+                    <Routes>
+                        <Route path="/hooks" element={<HookApp setTheme={setTheme} />} >
+                            <Route path="" element={<h2>Home</h2>} />
+                            <Route path="counter" element={<CounterApp />} />
+                            <Route path="counterHook" element={<CounterWithCustomHook />} />
+                            <Route path="useEffect" element={<SimpleForm />} />
+                            <Route path="useEffectHook" element={<SimpleFormWithCustomHook />} />
+                            <Route path="useFetch" element={<MultipleCustomHooks />} />
+                            <Route path="useRef" element={<FocusScreen />} />
+                            <Route path="useRefReal" element={<RealExampleRef />} />
+                            <Route path="useLayoutEffect" element={<Layout />} />
+                            <Route path="memorize" element={<Memorize />} />
+                            <Route path="memoHook" element={<MemoHook />} />
+                            <Route path="useCallback" element={<CallbackHook />} />
+                            <Route path="tareaMemo" element={<Padre />} />
+                            <Route path="useReducer" element={<TodoApp />} />
+                        </Route>
+                        <Route path="/context" element={<ContextApp setTheme={setTheme} />}>
+                            <Route path="" element={<HomeScreen />} />
+                            <Route path="about" element={<AboutScreen />} />
+                            <Route path="login" element={<LoginScreen />} />
+                        </Route>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </Router>
+            </CustomProvider>
+        </UserContext.Provider>
     );
 }
 
