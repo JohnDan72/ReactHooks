@@ -1,50 +1,64 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { Dropdown, Nav } from 'rsuite';
-import ResponsiveNav from '@rsuite/responsive-nav';
 
+import { CustomNavLink } from './CustomNavItem';
 
 
 // icons
 import { BsFillHouseFill } from "react-icons/bs";
+import { Nav } from 'rsuite';
+
 
 
 const propTypes = {
     setTheme: PropTypes.func.isRequired
 };
 const defaultProps = {};
- 
+
 
 const NavBarHeader = ({ setTheme }) => {
-
     const [active, setActive] = useState('home');
     const handleTheme = (theme) => setTheme(theme);
 
     return (
         <>
-            <ResponsiveNav activeKey={active} onSelect={setActive} appearance="tabs">
-
-                <ResponsiveNav.Item icon={<BsFillHouseFill />} eventKey='home'> Home </ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/counter" eventKey='useState'> 01-useState</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/counterHook" eventKey='useStateHook'> 01-useState-Hook</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useEffect" eventKey='useEffect'> 02-useEffect</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useEffectHook" eventKey='useEffectHook'> 02-useEffect-Hook</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useFetch" eventKey='useFetch'> 03-useFetch</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useRef" eventKey='useRef'> 04-useRef</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useRefReal" eventKey='useRefReal'> 04-useRefReal</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useLayoutEffect" eventKey='useLayoutEffect'> 05-useLayoutEffect</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/memorize" eventKey='memorize'> 06-memorize</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/memoHook" eventKey='memoHook'> 06-memoHook</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useCallback" eventKey='useCallback'> 06-useCallback</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/tareaMemo" eventKey='tareaMemo'> 07-tareaMemo</ResponsiveNav.Item>
-                <ResponsiveNav.Item href="/useReducer" eventKey='useReducer'> 08-useReducer</ResponsiveNav.Item>
-                
-                
-                <ResponsiveNav.Item eventKey='light' onClick={()=>handleTheme('light')}> Mode light</ResponsiveNav.Item>
-                <ResponsiveNav.Item eventKey='dark' onClick={()=>handleTheme('dark')}> Mode dark</ResponsiveNav.Item>
-                <ResponsiveNav.Item eventKey='highContrast' onClick={()=>handleTheme('high-contrast')}> Mode highContrast</ResponsiveNav.Item>
-                
-            </ResponsiveNav>
+            <Nav activeKey={active} onSelect={setActive} appearance="tabs">
+                <Nav.Item as={CustomNavLink} href="/hooks" eventKey="home" icon={<BsFillHouseFill />}>Home</Nav.Item>
+                <Nav.Dropdown title="01">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/counter" eventKey='useState'>01-useState</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/counterHook" eventKey='useStateHook'>01-useState-Hook</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="02">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useEffect" eventKey='useEffect'>02-useEffect</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useEffectHook" eventKey='useEffectHook'>02-useEffect-Hook</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="03">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useFetch" eventKey='useFetch'> 03-useFetch</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="04">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useRef" eventKey='useRef'> 04-useRef</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useRefReal" eventKey='useRefReal'> 04-useRefReal</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="05">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useLayoutEffect" eventKey='useLayoutEffect'> 05-useLayoutEffect</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="06">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/memorize" eventKey='memorize'> 06-memorize</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/memoHook" eventKey='memoHook'> 06-memoHook</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useCallback" eventKey='useCallback'> 06-useCallback</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="07">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/tareaMemo" eventKey='tareaMemo'> 07-tareaMemo</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="08">
+                    <Nav.Dropdown.Item as={CustomNavLink} href="/hooks/useReducer" eventKey='useReducer'> 08-useReducer</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+                <Nav.Dropdown title="theme">
+                    <Nav.Dropdown.Item eventKey='light' onClick={() => handleTheme('light')}> Mode light</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item eventKey='dark' onClick={() => handleTheme('dark')}> Mode dark</Nav.Dropdown.Item>
+                    <Nav.Dropdown.Item eventKey='highContrast' onClick={() => handleTheme('high-contrast')}> Mode highContrast</Nav.Dropdown.Item>
+                </Nav.Dropdown>
+            </Nav>
         </>
     );
 }
