@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas HookApp debe renderizar el component 1`] = `
+<Container>
+  <Header
+    className="mt-2"
+  >
+    <FlexboxGrid
+      justify="center"
+    >
+      <FlexboxGridItem
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "as": [Function],
+              "className": [Function],
+              "classPrefix": [Function],
+              "lg": [Function],
+              "lgHidden": [Function],
+              "lgOffset": [Function],
+              "lgPull": [Function],
+              "lgPush": [Function],
+              "md": [Function],
+              "mdHidden": [Function],
+              "mdOffset": [Function],
+              "mdPull": [Function],
+              "mdPush": [Function],
+              "sm": [Function],
+              "smHidden": [Function],
+              "smOffset": [Function],
+              "smPull": [Function],
+              "smPush": [Function],
+              "xs": [Function],
+              "xsHidden": [Function],
+              "xsOffset": [Function],
+              "xsPull": [Function],
+              "xsPush": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        lg={16}
+        md={18}
+        xs={20}
+      >
+        <NavBarHeader
+          setTheme={[MockFunction]}
+        />
+      </FlexboxGridItem>
+    </FlexboxGrid>
+  </Header>
+  <Content
+    className="mt-3"
+  >
+    <FlexboxGrid
+      justify="center"
+    >
+      <FlexboxGridItem
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "as": [Function],
+              "className": [Function],
+              "classPrefix": [Function],
+              "lg": [Function],
+              "lgHidden": [Function],
+              "lgOffset": [Function],
+              "lgPull": [Function],
+              "lgPush": [Function],
+              "md": [Function],
+              "mdHidden": [Function],
+              "mdOffset": [Function],
+              "mdPull": [Function],
+              "mdPush": [Function],
+              "sm": [Function],
+              "smHidden": [Function],
+              "smOffset": [Function],
+              "smPull": [Function],
+              "smPush": [Function],
+              "xs": [Function],
+              "xsHidden": [Function],
+              "xsOffset": [Function],
+              "xsPull": [Function],
+              "xsPush": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        lg={16}
+        md={18}
+        xs={20}
+      >
+        <Outlet />
+      </FlexboxGridItem>
+    </FlexboxGrid>
+  </Content>
+</Container>
+`;
