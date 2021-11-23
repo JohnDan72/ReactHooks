@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas Main Router debe renderizar el component 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "setUser": [Function],
+      "user": Object {},
+    }
+  }
+>
+  <CustomProvider
+    theme="dark"
+  >
+    <BrowserRouter>
+      <Routes>
+        <Route
+          element={
+            <HookApp
+              setTheme={[Function]}
+            />
+          }
+          path="/hooks"
+        >
+          <Route
+            element={
+              <h2>
+                Home
+              </h2>
+            }
+            path=""
+          />
+          <Route
+            element={<CounterApp />}
+            path="counter"
+          />
+          <Route
+            element={<CounterWithCustomHook />}
+            path="counterHook"
+          />
+          <Route
+            element={<SimpleForm />}
+            path="useEffect"
+          />
+          <Route
+            element={<SimpleFormWithCustomHook />}
+            path="useEffectHook"
+          />
+          <Route
+            element={<MultipleCustomHooks />}
+            path="useFetch"
+          />
+          <Route
+            element={<FocusScreen />}
+            path="useRef"
+          />
+          <Route
+            element={<RealExampleRef />}
+            path="useRefReal"
+          />
+          <Route
+            element={<Layout />}
+            path="useLayoutEffect"
+          />
+          <Route
+            element={<Memorize />}
+            path="memorize"
+          />
+          <Route
+            element={<MemoHook />}
+            path="memoHook"
+          />
+          <Route
+            element={<CallbackHook />}
+            path="useCallback"
+          />
+          <Route
+            element={<Padre />}
+            path="tareaMemo"
+          />
+          <Route
+            element={<TodoApp />}
+            path="useReducer"
+          />
+        </Route>
+        <Route
+          element={
+            <ContextApp
+              setTheme={[Function]}
+            />
+          }
+          path="/context"
+        >
+          <Route
+            element={<HomeScreen />}
+            path=""
+          />
+          <Route
+            element={<AboutScreen />}
+            path="about"
+          />
+          <Route
+            element={<LoginScreen />}
+            path="login"
+          />
+        </Route>
+        <Route
+          element={<NotFound />}
+          path="*"
+        />
+      </Routes>
+    </BrowserRouter>
+  </CustomProvider>
+</ContextProvider>
+`;

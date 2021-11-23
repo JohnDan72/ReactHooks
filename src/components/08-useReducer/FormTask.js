@@ -13,9 +13,12 @@ const FormTask = ({ handleAdd }) => {
     const inputRef = useRef();
 
     const { formValue, handleInputChange } = useSimpleForm({ task: '' });
+    const { task } = formValue;
 
     const handleSumbit = (e) => {
+
         if (formValue.task.trim() === '') {
+            console.log("Campo vacío");
             return;
         }
 
@@ -27,9 +30,8 @@ const FormTask = ({ handleAdd }) => {
         
 
         handleInputChange({ name: 'task', value: '' });
-        inputRef.current.firstChild.value = '';
-        inputRef.current.firstChild.select();
-
+        // inputRef.current.firstChild.value = '';
+        // inputRef.current.firstChild.select();
         handleAdd(newTodo);
 
     }
@@ -40,6 +42,7 @@ const FormTask = ({ handleAdd }) => {
                 <Form.Control name="task"
                     placeholder="new task"
                     ref={inputRef}
+                    value={task}
                     onChange={(value) => handleInputChange({ name: 'task', value })}
                 />
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas TodoApp debe renderizar el component 1`] = `
+exports[`Pruebas FormTask debe renderizar el component 1`] = `
 <Form
   onSubmit={[Function]}
 >
@@ -14,6 +14,7 @@ exports[`Pruebas TodoApp debe renderizar el component 1`] = `
       name="task"
       onChange={[Function]}
       placeholder="new task"
+      value=""
     />
   </FormGroup>
   <FormGroup>
