@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas TodoApp debe renderizar el component 1`] = `
+<Form
+  onSubmit={[Function]}
+>
+  <FormGroup
+    controlId="name"
+  >
+    <FormControlLabel>
+      Task description
+    </FormControlLabel>
+    <FormControl
+      name="task"
+      onChange={[Function]}
+      placeholder="new task"
+    />
+  </FormGroup>
+  <FormGroup>
+    <ButtonToolbar>
+      <Button
+        appearance="primary"
+        type="submit"
+      >
+        Add Item
+      </Button>
+    </ButtonToolbar>
+  </FormGroup>
+</Form>
+`;

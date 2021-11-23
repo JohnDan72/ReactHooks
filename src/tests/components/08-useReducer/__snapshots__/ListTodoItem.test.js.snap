@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas ListTodoItem debe renderizar el componente 1`] = `
+<ListItem
+  className="disabled"
+  key="50"
+>
+  <FlexboxGrid
+    align="middle"
+    justify="space-between"
+  >
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      className="false"
+    >
+      <Icon
+        as={[Function]}
+        fill="currentColor"
+        height="1em"
+        spin={true}
+        style={
+          Object {
+            "marginRight": "10px",
+          }
+        }
+        width="1em"
+      />
+      Aprender React
+    </FlexboxGridItem>
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+    >
+      <Toggle
+        checked={false}
+        checkedChildren={<Check />}
+        className="mr-3"
+        onChange={[Function]}
+        size="md"
+      />
+      <Button
+        appearance="ghost"
+        color="red"
+        onClick={[Function]}
+      >
+        delete
+      </Button>
+    </FlexboxGridItem>
+  </FlexboxGrid>
+</ListItem>
+`;

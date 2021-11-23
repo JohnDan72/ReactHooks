@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas TodoApp debe renderizar el component 1`] = `
+<Fragment>
+  <h3>
+    TodoApp (total: 
+    0
+    )
+  </h3>
+  <Divider />
+  <FlexboxGrid
+    align="middle"
+  >
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      sm={12}
+      xs={24}
+    >
+      <FormTask
+        handleAdd={[Function]}
+      />
+      <ListTodos
+        handleDelete={[Function]}
+        handleTogle={[Function]}
+        state={Array []}
+      />
+    </FlexboxGridItem>
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      sm={12}
+      xs={24}
+    >
+      <Divider>
+        state
+      </Divider>
+      <JSONTree
+        collectionLimit={50}
+        data={Array []}
+        getItemString={[Function]}
+        hideRoot={false}
+        invertTheme={true}
+        isCustomNode={[Function]}
+        keyPath={
+          Array [
+            "root",
+          ]
+        }
+        labelRenderer={[Function]}
+        postprocessValue={[Function]}
+        shouldExpandNode={[Function]}
+        valueRenderer={[Function]}
+      />
+    </FlexboxGridItem>
+  </FlexboxGrid>
+</Fragment>
+`;

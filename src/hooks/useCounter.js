@@ -16,7 +16,7 @@ export const useCounter = ( initialState = 3 ) => {
     // const decrement = ( value = 1 ) => {
     //     if(state - value >= 1) {setState(state - value)}
     // };
-    const reset = () => setState(1);
+    const reset = () => setState(initialState);
 
     return {
         state,

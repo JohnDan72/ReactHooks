@@ -13,10 +13,15 @@ export const useSimpleForm = (initialState = {}) => {
         });
     }
 
+    const reset = () => {
+        setFormValue(initialState);
+    }
+
     return {
         formValue,
         setFormValue,
         handleInputChange,
+        reset
     };
 }
 

@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas ListTodos debe renderizar el componente 1`] = `
+<List
+  bordered={true}
+  className="my-4"
+>
+  <ListTodoItem
+    handleDelete={[MockFunction]}
+    handleTogle={[MockFunction]}
+    key="1"
+    todo={
+      Object {
+        "desc": "Aprender React",
+        "done": false,
+        "id": 1,
+      }
+    }
+  />
+  <ListTodoItem
+    handleDelete={[MockFunction]}
+    handleTogle={[MockFunction]}
+    key="2"
+    todo={
+      Object {
+        "desc": "Aprender Angular",
+        "done": false,
+        "id": 2,
+      }
+    }
+  />
+  <ListTodoItem
+    handleDelete={[MockFunction]}
+    handleTogle={[MockFunction]}
+    key="3"
+    todo={
+      Object {
+        "desc": "Aprender MongoDB",
+        "done": false,
+        "id": 3,
+      }
+    }
+  />
+</List>
+`;
+
+exports[`Pruebas ListTodos debe tener 3 todos list items 1`] = `
+<List
+  bordered={true}
+  className="my-4"
+>
+  <ListTodoItem
+    handleDelete={[MockFunction]}
+    handleTogle={[MockFunction]}
+    key="1"
+    todo={
+      Object {
+        "desc": "Aprender React",
+        "done": false,
+        "id": 1,
+      }
+    }
+  />
+  <ListTodoItem
+    handleDelete={[MockFunction]}
+    handleTogle={[MockFunction]}
+    key="2"
+    todo={
+      Object {
+        "desc": "Aprender Angular",
+        "done": false,
+        "id": 2,
+      }
+    }
+  />
+  <ListTodoItem
+    handleDelete={[MockFunction]}
+    handleTogle={[MockFunction]}
+    key="3"
+    todo={
+      Object {
+        "desc": "Aprender MongoDB",
+        "done": false,
+        "id": 3,
+      }
+    }
+  />
+</List>
+`;

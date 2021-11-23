@@ -18,7 +18,7 @@ const MultipleCustomHooks = () => {
     const { data, loading } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
 
     const { author, quote } = !!data && data[0]; //doble negación para return 'false' en lugar de 'null'
-    console.log(data);
+    // console.log(data);
 
 
     return (

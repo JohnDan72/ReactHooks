@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas para RealExampleRef debe mostrar el componente <MultipleCustomHooks/> 1`] = `
+<Fragment>
+  <h3>
+    Use Ref
+  </h3>
+  <Divider />
+  <MultipleCustomHooks />
+  <Button
+    appearance="default"
+    className="my-5"
+    onClick={[Function]}
+  >
+    Show/Hide
+  </Button>
+</Fragment>
+`;
+
+exports[`Pruebas para RealExampleRef debe renderizar el componente 1`] = `
+<Fragment>
+  <h3>
+    Use Ref
+  </h3>
+  <Divider />
+  <Button
+    appearance="default"
+    className="my-5"
+    onClick={[Function]}
+  >
+    Show/Hide
+  </Button>
+</Fragment>
+`;

@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas MultipleCustomHooks debe mostrar la info  1`] = `
+<Fragment>
+  <h3>
+    Use Fetch (Breaking bad API)
+  </h3>
+  <Divider />
+  <FlexboxGrid
+    align="middle"
+    className="my-4"
+    justify="center"
+  >
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      xs={12}
+    >
+      <Message
+        header="Success"
+        showIcon={true}
+        type="success"
+      >
+        <h5>
+          Author: 
+          Juan
+        </h5>
+        <h6>
+          Quote: 
+          Hola mundo
+        </h6>
+      </Message>
+    </FlexboxGridItem>
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+    >
+      <ButtonToolbar>
+        <Button
+          appearance="ghost"
+          color="yellow"
+          onClick={[Function]}
+        >
+          Anterior
+        </Button>
+        <Button
+          appearance="ghost"
+          color="blue"
+          onClick={[Function]}
+        >
+          Siguiente
+        </Button>
+      </ButtonToolbar>
+    </FlexboxGridItem>
+  </FlexboxGrid>
+</Fragment>
+`;
+
+exports[`Pruebas MultipleCustomHooks debe renderizar el component  1`] = `
+<Fragment>
+  <h3>
+    Use Fetch (Breaking bad API)
+  </h3>
+  <Divider />
+  <FlexboxGrid
+    align="middle"
+    className="my-4"
+    justify="center"
+  >
+    <FlexboxGridItem
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "propTypes": Object {
+            "as": [Function],
+            "className": [Function],
+            "classPrefix": [Function],
+            "lg": [Function],
+            "lgHidden": [Function],
+            "lgOffset": [Function],
+            "lgPull": [Function],
+            "lgPush": [Function],
+            "md": [Function],
+            "mdHidden": [Function],
+            "mdOffset": [Function],
+            "mdPull": [Function],
+            "mdPush": [Function],
+            "sm": [Function],
+            "smHidden": [Function],
+            "smOffset": [Function],
+            "smPull": [Function],
+            "smPush": [Function],
+            "xs": [Function],
+            "xsHidden": [Function],
+            "xsOffset": [Function],
+            "xsPull": [Function],
+            "xsPush": [Function],
+          },
+          "render": [Function],
+        }
+      }
+    >
+      <Icon
+        as={[Function]}
+        fill="currentColor"
+        height="1em"
+        size="4em"
+        spin={true}
+        width="1em"
+      />
+    </FlexboxGridItem>
+  </FlexboxGrid>
+</Fragment>
+`;

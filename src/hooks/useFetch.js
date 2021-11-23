@@ -30,6 +30,9 @@ export const useFetch = (url) => {
                     console.log("SetState wasn't called")
                 }
             })
+            .catch( err => {
+                setState({ data: null , loading: false , error: err});
+            })
 
 
 
